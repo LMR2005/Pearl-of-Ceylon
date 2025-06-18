@@ -1,0 +1,117 @@
+/* Customer Dashboard Section */
+.customer-dashboard {
+    padding: 30px 20px;
+    max-width: 100%;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.customer-dashboard h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.dashboard-date {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.dashboard-section h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bookings-table th,
+.bookings-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.bookings-table th {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.bookings-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.bookings-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.view-details-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.view-details-btn:hover {
+    background-color: #2980b9;
+}
+
+.view-details-btn:focus {
+    outline: 2px solid #2980b9;
+    outline-offset: 2px;
+}
+
+/* Responsive design for customer dashboard */
+@media screen and (max-width: 768px) {
+    .customer-dashboard {
+        padding: 20px 15px;
+    }
+
+    .customer-dashboard h2 {
+        font-size: 28px;
+    }
+
+    .dashboard-date {
+        font-size: 13px;
+    }
+
+    .dashboard-section {
+        padding: 15px;
+    }
+
+    .dashboard-section h3 {
+        font-size: 20px;
+    }
+
+    .bookings-table th,
+    .bookings-table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .view-details-btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}   
+
