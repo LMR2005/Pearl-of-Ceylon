@@ -241,7 +241,7 @@ if ($user_id) {
                                         <td>
                                             <button class='btn btn-primary modify-btn' onclick='openModal(<?php echo $row["reservation_id"]; ?>,"<?php echo $row["room_type"]?>", "<?php echo $row["arrival_date"] ?>", "<?php echo $row["departure_date"]?>")'>Modify</button>
                                             <form action='cancel_reservation.php' method='POST' style='display:inline;'>
-                                                <input type='hidden' name='reservation_id' value='" . $row["reservation_id"] . "' />
+                                                <input type='hidden' name='reservation_id' value='<?php echo $row["reservation_id"]; ?>' />
                                                 <button type='submit' class='btn btn-danger'>Cancel</button>
                                             </form>
                                         </td>
