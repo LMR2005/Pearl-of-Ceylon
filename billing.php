@@ -16,7 +16,7 @@ date_default_timezone_set('Asia/Colombo');
 $currentTime = new DateTime();
 
 
-// Step 1: Fetch customer_id based on username (join users and customers)
+// Fetch customer_id based on username (join users and customers)
 $sql = "SELECT c.customer_id
         FROM users u
         JOIN customers c ON u.user_id = c.user_id
@@ -32,7 +32,7 @@ $stmt->close();
 
 // Check if customer_id exists
 if ($customer_id) {
-    // Step 2: Fetch reservation_id based on customer_id
+    // Fetch reservation_id based on customer_id
     $sql_reservation = "SELECT r.reservation_id
                         FROM reservations r
                         WHERE r.customer_id = ?";
@@ -44,7 +44,7 @@ if ($customer_id) {
     $stmt_reservation->fetch();
     $stmt_reservation->close();
 
-    // Step 3: Fetch billing data based on reservation_id
+    // Fetch billing data based on reservation_id
     if ($reservation_id) {
         $sql_billing = "SELECT b.billing_id, b.amount, b.paid, b.payment_method, b.billing_date
                         FROM billing b
