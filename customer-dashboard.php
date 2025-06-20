@@ -10,8 +10,9 @@ if (!isset($_SESSION['username'])) {
     exit();
 }
 
+
 // Fetch reservations
-$reservations_query = "SELECT * FROM `reservations` WHERE arrival_date > CURDATE() ORDER BY `arrival_date` ASC;";
+$reservations_query = "SELECT * FROM `reservations` WHERE arrival_date > CURDATE()  ORDER BY `arrival_date` ASC;";
 $reservations_result = $conn->query($reservations_query);
 
 
